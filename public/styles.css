@@ -53,6 +53,16 @@ p, label, strong {
     padding: 0 15px;
     justify-content: space-between;
 }
+#Line1 {
+  font-size: 25px;
+  font-weight: bold;
+   color: white;
+  padding: 0 auto;
+}
+
+#t-names {
+  color: white;
+}
 
 .badge {
     padding: 9px 20px;
@@ -109,7 +119,7 @@ header {
     background-color: #131313;
     padding: 20px 0;
     position: relative;
-    border-bottom: 1px solid #FF00FF;
+    border-bottom: 1px solid #4efcf3;
 }
 
 .hamburger-menu {
@@ -149,8 +159,9 @@ nav ul li a:hover {
     color: #FF00FF;
 }
 #login-register-button {
-    background-color: #FF00FF;
-    color: #131313;
+  font-family:revert;
+    background-color: #694EAE;
+    color: white;
     border-radius: 20px;
     padding: 10px 15px;
     font-size: 0.85em;
@@ -219,7 +230,7 @@ nav ul li a:hover {
 
 #latest-news .flex h5 {
     flex-basis: 25%;
-    background-color: #FF00FF;
+    background-color: #694EAE;
     padding: 25px;
     margin: 0;
     text-align: right;
@@ -300,7 +311,7 @@ nav ul li a:hover {
 /* start: past tournaments styles */
 #past-tournaments {
     background: url('') top center no-repeat;
-    background-color: #171429;
+    background-color: #2D214E;
     border-top: 1px solid #d6dee7;
     border-bottom: 1px solid #d6dee7;
     padding: 70px 0 120px;
@@ -326,6 +337,10 @@ nav ul li a:hover {
 #past-tournaments .box img {
     width: 100%;
 }
+#past-tournaments-head {
+  color: white;
+}
+
 
 #past-tournaments .box .box-lower-section {
     padding: 20px;
@@ -681,7 +696,7 @@ footer ul li a {
     letter-spacing: -0.02em;
     line-height: 75px;
   }
-  
+
   .deconstructed > div {
     position: absolute;
     top: 0;
@@ -691,31 +706,31 @@ footer ul li a {
     color: #4efcf3;
     pointer-events: none;
   }
-  
+
   .deconstructed > div:nth-child(1) {
     -webkit-mask-image: linear-gradient(black 25%, transparent 25%);
     mask-image: linear-gradient(black 25%, transparent 25%);
     animation: deconstructed1 5s infinite;
   }
-  
+
   .deconstructed > div:nth-child(2) {
     -webkit-mask-image: linear-gradient(transparent 25%, black 25%, black 50%, transparent 50%);
     mask-image: linear-gradient(transparent 25%, black 25%, black 50%, transparent 50%);
     animation: deconstructed2 5s infinite;
   }
-  
+
   .deconstructed > div:nth-child(3) {
      -webkit-mask-image: linear-gradient(transparent 50%, black 50%, black 75%, transparent 75%);
     mask-image: linear-gradient(transparent 50%, black 50%, black 75%, transparent 75%);
     animation: deconstructed3 5s infinite;
   }
-  
+
   .deconstructed > div:nth-child(4) {
      -webkit-mask-image: linear-gradient(transparent 75%, black 75%);
     mask-image: linear-gradient(transparent 75%, black 75%);
     animation: deconstructed4 5s infinite;
   }
-  
+
   @keyframes deconstructed1 {
     0% {
       transform: translateX(100%);
@@ -730,7 +745,7 @@ footer ul li a {
       transform: translateX(-120%);
     }
   }
-  
+
   @keyframes deconstructed2 {
     0% {
       transform: translateX(100%);
@@ -745,7 +760,7 @@ footer ul li a {
       transform: translateX(-125%);
     }
   }
-  
+
   @keyframes deconstructed3 {
     0% {
       transform: translateX(100%);
@@ -760,7 +775,7 @@ footer ul li a {
       transform: translateX(-130%);
     }
   }
-  
+
   @keyframes deconstructed4 {
     0% {
       transform: translateX(100%);
