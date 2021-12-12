@@ -428,6 +428,8 @@ nav ul li a:hover {
     background: url('') top right no-repeat;
     background-size: cover;
     padding: 75px 0 50px;
+    border-top: 1px solid #4efcf3;
+    border-bottom: 1px solid #4efcf3;   
 }
 
 #mvp h1 {
@@ -439,6 +441,10 @@ nav ul li a:hover {
     flex-basis: 23%;
     position: relative;
     text-align: center;
+}
+
+#mvp-head {
+  color: white;
 }
 
 #mvp .box .rating-badge {
