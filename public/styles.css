@@ -95,11 +95,11 @@ p, label, strong {
 }
 
 .badge.tournaments {
-    background-color: #FF00FF;
+    background-color: #155738;
 }
 
 .badge.premium-tournament {
-    background-color: #FF1493;
+    background-color: #cdff43;
     color: #252525;
 }
 
@@ -156,7 +156,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #FF00FF;
+    color: #ffee00;
 }
 #login-register-button {
     font-family:revert;
@@ -328,7 +328,7 @@ nav ul li a:hover {
 #available-games-boxes .box .contents a {
     font-size: 0.8em;
     font-weight: 300;
-    color: #999;
+    color: rgb(58, 65, 71);
 }
 /* end: available games styles */
 
@@ -348,7 +348,7 @@ nav ul li a:hover {
 #past-tournaments .box {
     position: relative;
     flex-basis: 31%;
-    background-color: rgb(75, 85, 92);
+    background-color: rgb(38, 44, 48);
 }
 
 #past-tournaments .box .badge {
@@ -425,7 +425,7 @@ nav ul li a:hover {
 }
 
 #tournaments .box .tournaments-content h3 {
-    color: #FF00FF;
+    color: #ffeb34;
     margin-top: 0;
 }
 
@@ -435,7 +435,7 @@ nav ul li a:hover {
 }
 
 #tournaments .box .tournaments-content label.prizes {
-    color: #FF00FF;
+    color: #bbff00;
     display: inline-block;
     margin-top: 12px;
 }
@@ -562,7 +562,7 @@ nav ul li a:hover {
 }
 
 .post-item > div h5 {
-    color: #FF00FF;
+    color: hsl(207, 100%, 67%);
     font-size: 0.8em;
     margin-top: 0;
 }
@@ -621,7 +621,7 @@ nav ul li a:hover {
 }
 
 .comments-item > div h5 {
-    color: #FF00FF;
+    color: #2cff7d;
     font-size: 0.8em;
     margin-top: 0;
 }
@@ -648,7 +648,7 @@ footer small .footer-heart {
 }
 
 footer small a {
-    color: #FF00FF;
+    color: #00d9ff;
 }
 
 footer ul {
