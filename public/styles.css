@@ -598,7 +598,7 @@ nav ul li a:hover {
 }
 
 .comments-item > div small {
-    color: #999;
+    color: #333;
     font-size: 0.75em;
 }
 /* end: posts/comments styles */
