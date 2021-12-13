@@ -480,7 +480,7 @@ nav ul li a:hover {
     background-color: #FF00FF;
     position: absolute;
     top: -30px;
-    left: 30px;
+    left: 30px; 
 }
 
 #mvp .box .rating-badge.purple {
