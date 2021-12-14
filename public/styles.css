@@ -56,7 +56,6 @@ p, label, strong {
 #Line1 {
   font-size: 25px;
   font-weight: bold;
-   color: white;
   padding: 0 auto;
 }
 
@@ -410,7 +409,7 @@ nav ul li a:hover {
 }
 
 #tournaments .box {
-    background-color: #4d4e55;
+    background-color: #1f1d20;
     padding: 70px 20px 40px;
     flex-basis: 45%;
     position: relative;
