@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us</title>
+    <link rel="stylesheet" href="style.css">
 
     <style type="text/css">
         /*start: contact section styles */
@@ -15,14 +16,7 @@
     box-sizing: border-box;
     font-family: sans-serif;
 }
-body {
-    min-height: 100vh;
-    background: url('https://wallpapersmug.com/download/1600x1200/5051af/pubg-playerunknowns-battlegrounds.jpg') no-repeat;
-    background-size: cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+
 
 .contact-section {
     width: 100%;
@@ -152,6 +146,8 @@ body {
     border-left: 8px solid #D2691E;
     border-radius: 8px;
 }
+
+
 /*end: error message styles */
     </style>
 </head>
@@ -179,25 +175,52 @@ body {
 
 
     <!--contact section: start-->
-
-    <div class="contact-section">
-        <div class="contact-info">
-            <div><i class="fas fa-map-marker-alt"></i>Address, City, Country</div>
-            <div><i class="fas fa-envelope"></i>contact@email.com</div>
-            <div><i class="fas fa-phone"></i>+00 0000 000 000</div>
-            <div><i class="fas fa-clock"></i>Mon-Fri 9:00 Am to 6:00 Pm</div>
+    <header>
+        <div class="flex">
+            <div class="logo">
+                <a href="#"><img src="" /></a>
+            </div>
+            <nav>
+                <button id="nav-toggle" class="hamburger-menu">
+                    <span class="strip"></span>
+                    <span class="strip"></span>
+                    <span class="strip"></span>
+                </button>
+                <ul id="nav-menu-container">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">Tournaments</a></li>
+                    <li><a href="#">Interviews</a></li>
+                    <li><a href="#">Awards</a></li>
+                    <li><a href="#" id="active">Contact</a></li>
+                </ul>
+            </nav>
+            <a href="login.html" id="login-register-button">Login / Register</a>
         </div>
-
-        <div class="contact-form">
-            <h2>Contact Us</h2>
-            <form class="contact" action="" method="post">
-                <input type="text" name="name" class="text-box" placeholder=" username" required>
-                <input type="email" name="email" class="text-box" placeholder="Email Address" required>
-                <textarea name="message" rows="5" placeholder="message" required></textarea>
-                <input type="submit" name="submit" class="send-btn" value="Send">
-            </form>
+    </header>
+    <section id="main_front-image">
+        <div class="main_front-marketing-text">
+            <div class="contact-section">
+                <div class="contact-info">
+                    <div><i class="fas fa-map-marker-alt"></i>VIT Bhopal</div>
+                    <div><i class="fas fa-envelope"></i>contact@email.com</div>
+                    <div><i class="fas fa-phone"></i>+00 0000 000 000</div>
+                    <div><i class="fas fa-clock"></i>Mon-Fri 9:00 Am to 6:00 Pm</div>
+                </div>
+        
+                <div class="contact-form">
+                    <h2>Contact Us</h2>
+                    <form class="contact" action="" method="post">
+                        <input type="text" name="name" class="text-box" placeholder=" username" required>
+                        <input type="email" name="email" class="text-box" placeholder="Email Address" required>
+                        <textarea name="message" rows="5" placeholder="message" required></textarea>
+                        <input type="submit" name="submit" class="send-btn" value="Send">
+                    </form>
+                </div>
+            </div>
         </div>
-    </div>
+    </section>
+
+    
 
     <!--contact section: end-->
 </body>

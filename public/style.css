@@ -198,6 +198,9 @@ nav ul li a:hover {
     background: url('https://wallpapersmug.com/download/1600x1200/5051af/pubg-playerunknowns-battlegrounds.jpg') top center no-repeat;
     height: 820px;
 }
+#active{
+    color: yellow;
+}
 
 .main_front-marketing-text {
     max-width: 1200px;
