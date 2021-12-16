@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In Page</title>
+
+    <style type="text/css">
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing:border-box;
+
+        }
+        .container{
+            background: url('https://wallpapersmug.com/download/1600x1200/5051af/pubg-playerunknowns-battlegrounds.jpg');
+            background-size: cover;
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .form{
+            width: 600px;
+            height: 600px;
+            background: transparent;
+            backdrop-filter: blur(4px);
+            box-shadow:0 10px 30px rgba(0,0,0,0.7);
+            border-radius: 26px;
+            border: solid 1px rgba(0,0,0,0.3);
+            cursor: pointer;
+            display: inline-block;
+        }
+        .input-field #user{
+            margin-bottom: 1em;
+        }
+        #email, #user, #lock{
+            width: 300px;
+            height:60px;
+            background: none;
+            outline: none;
+            margin: auto;
+            border: none;
+            border-radius: 25px;
+            box-shadow: inset 6px 6px 6px #727171, inset -5px -5px 5px #bbb;
+        }
+        input{
+            width: 210px;
+            height: 40px;
+            background: transparent;
+            border: none ;
+            outline: none;
+            font-size: 18px;
+            color: rgba(255,255,255,0.8);
+        }
+        #logo{
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background: url('');
+            background-size: 100%;
+            margin-top: 25px;
+            box-shadow: 0 0 50px rgba(0,0,0,0.8);
+            backdrop-filter: blur(16px);
+        }
+        h1{
+            font-family:'roboto', sans-serif;
+            margin: 20px;
+            background: -webkit-linear-gradient( #ee8f01, #af0202);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        i{
+            margin:0 20px;
+            color: rgba(255,255,255,0.7);
+        }
+        button{
+            width: 250px;
+            height: 50px;
+            font-size: 22px;
+            border-radius: 40px;
+            border: none;
+            outline: none;
+            background: linear-gradient(90deg, black, brown, orange);
+        }
+        button:hover{
+            background: linear-gradient(90deg, orange, brown, black);
+        }
+    </style>
+</head>
+<body>
+    <div class = "container">
+        <div class = "form" align="center">
+            <div id="logo"></div>
+            <h1> Nexx-Gen Scrims</h1>
+            <div class="input-field">
+                <div id = "email">
+                    <i class = "fa fa-envelope fa-lg"></i>
+                    <input type = "text" placeholder="email">
+                </div>
+                <br>
+                <div id = "user">
+                    <i class = "fa fa-user fa-lg"></i>
+                    <input type = "text" placeholder="username">
+                </div>
+                <div id = "lock">
+                    <i class = "fa fa-lock fa-lg"></i>
+                    <input type = "password" placeholder = "password">
+                </div>
+            </div>
+
+        <br>
+        <button>Sign In</button>
+        
+
+        </div>
+    </div>
+</body>
+</html>

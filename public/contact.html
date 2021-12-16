@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+
+    <style type="text/css">
+        /*start: contact section styles */
+        *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body {
+    min-height: 100vh;
+    background: url('https://wallpapersmug.com/download/1600x1200/5051af/pubg-playerunknowns-battlegrounds.jpg') no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.contact-info {
+    color: #fff;
+    max-width: 500px;
+    line-height: 65px;
+    padding-left: 50px;
+    font-size: 18px;
+}
+.contact-info i{
+    margin-right: 20px;
+    font-size: 25px;
+}
+.contact-form{
+    max-width: 700px;
+    margin-right: 50px;
+}
+.contact-info, .contact-form{
+    flex: 1;
+}
+.contact-form h2{
+    color: #fff;
+    text-align: center;
+    font-size: 35px;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+.contact-form .text-box{
+    background: #000;
+    color: #fff;
+    border: none;
+    width: calc(50% - 10px);
+    height: 50px;
+    padding: 12px;
+    font-size: 15px;
+    border-radius: 5px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    opacity: 0.9;
+}
+.contact-form .text-box:first-child{
+    margin-right: 15px;
+}
+.contact-form textarea{
+    background: #000;
+    color: #fff;
+    border: none;
+    width: 100%;
+    padding: 12px;
+    font-size: 15px;
+    min-height: 200px;
+    max-height: 400px;
+    resize: vertical;
+    border-radius: 5px;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+    opacity: 0.9;
+}
+.contact-form .send-btn{
+    float: right;
+    background: #DEB887;
+    color: #fff;
+    border: none;
+    width: 120px;
+    height: 40px;
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-radius: 5px;
+
+}
+.contact-form .send-btn:hover{
+    background: #D2691E;
+}
+
+@media screen and (max-width: 950px){
+    .contact-section{
+        flex-direction: column;
+    }
+    .contact-info, .contact-form{
+        margin: 30px 50px;
+    }
+    .contact-form h2{
+        font-size: 30px;
+    }
+    .contact-form .text-box{
+        width: 100%;
+    }
+}
+/*end: contact section styles */
+
+
+/*start: alert message styles */
+
+.alert-success{
+    z-index: 1;
+    background: #DEB887;
+    font-size: 18px;
+    padding: 20px 40px;
+    min-width: 420px;
+    position: fixed;
+    right: 0;
+    top: 10px;
+    border-left: 8px solid #D2691E;
+    border-radius: 8px;
+}
+
+/*end: alert message styles */
+
+/*start: error message styles */
+.alert-error{
+    z-index: 1;
+    background: #DEB887;
+    font-size: 18px;
+    padding: 20px 40px;
+    min-width: 420px;
+    position: fixed;
+    right: 0;
+    top: 10px;
+    border-left: 8px solid #D2691E;
+    border-radius: 8px;
+}
+/*end: error message styles */
+    </style>
+</head>
+<body>
+    
+
+    <!--alert message: start-->
+    <!--
+    <div class="alert-success">
+        <span>Message Sent! Thankyou for contacting us!</span>
+    </div>
+
+-->
+    <!--alert message: end-->
+
+    <!--alert error: start-->
+    
+    <!--
+    <div class="alert-error">
+        <span>Something went Wrong! Please Try Again</span>
+    </div>
+-->
+
+    <!--alert error: end-->
+
+
+    <!--contact section: start-->
+
+    <div class="contact-section">
+        <div class="contact-info">
+            <div><i class="fas fa-map-marker-alt"></i>Address, City, Country</div>
+            <div><i class="fas fa-envelope"></i>contact@email.com</div>
+            <div><i class="fas fa-phone"></i>+00 0000 000 000</div>
+            <div><i class="fas fa-clock"></i>Mon-Fri 9:00 Am to 6:00 Pm</div>
+        </div>
+
+        <div class="contact-form">
+            <h2>Contact Us</h2>
+            <form class="contact" action="" method="post">
+                <input type="text" name="name" class="text-box" placeholder=" username" required>
+                <input type="email" name="email" class="text-box" placeholder="Email Address" required>
+                <textarea name="message" rows="5" placeholder="message" required></textarea>
+                <input type="submit" name="submit" class="send-btn" value="Send">
+            </form>
+        </div>
+    </div>
+
+    <!--contact section: end-->
+</body>
+</html>

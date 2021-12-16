@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Read More</title>
+
+    <style type="text/css">
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+        .section{
+            width: 100%;
+        }
+        .section .container{
+            width: 80%;
+            display: block;
+            margin: 0px auto;
+            padding: 50px 0px;
+        }
+        .container .title{
+            width: 100%;
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        .container .title h1{
+            text-transform: uppercase;
+            font-size: 35px;
+            color: #00FFFF;
+        }
+        .container .title::after{
+            content:"";
+            height: 5px;
+            width: 100px;
+            background-color: #00008B;
+            border-radius: 25px;
+            display: block;
+            margin: auto;
+        }
+        .content{
+            float: left;
+            width: 55%;
+        }
+        .image-section {
+            float: right;
+            width: 40%;
+        }
+        .image-section img{
+            width: 100%;
+            height: auto;
+        }
+        .content .article h3{
+            color: #a3a3a3;
+            font-size: 16px;
+        }
+        .content .article p{
+            margin-top: 20px;
+            font-size: 16px;
+            line-height: 1.5;
+            color:#333;
+        }
+        .container .social{
+            width: 100%;
+            clear: both;
+            margin-top: 50px;
+            text-align: center;
+            display: inline-block;
+        }
+        .container .social i{
+            color: #fff;
+            font-size: 22px;
+            height: 45px;
+            width: 45px;
+            border-radius: 50%;
+            line-height: 45px;
+            text-align: center;
+            background-color: #00FFFF;
+            margin: 0px 5px;
+        }
+        .container .social i:hover{
+            color: #fff;
+            background-color: #00008B;
+            transition: 1s ease;
+            transform: rotate(360deg);
+        }
+        @media screen and (max-width: 768px){
+            .section .container{
+                width:80%;
+                display: block;
+                margin: auto;
+            }
+            .content{
+                float: none;
+                width: 100%;
+                display: block;
+                margin: auto;
+            }
+            .image-setion{
+                float: none;
+                width: 100%;
+                margin-top: 50px;
+            }
+            .image-section img{
+                width: 100%;
+                height: auto;
+                display: block;
+                margin: auto;
+            }
+            .container .title h1{
+                text-align: center;
+                font-size: 30px;
+            }
+            .container .social i{
+                font-size: 19px;
+                height: 35px;
+                width: 35px;
+                line-height: 35px;
+                
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="section">
+        <div class="container">
+            <div class="title">
+                <h1> About Us</h1>
+            </div>
+            <div class="content">
+                <div class="article">
+                    <h3>
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                        Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</h3>
+
+                        <p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.</p>
+                        
+                    <div class="image-section">
+                        <img src="">
+
+                    </div>
+                    <div class="social">
+                        <a href=""><i class="fab fa-facebook-f"></i></a>
+                        <a href=""><i class="fab fa-instagram"></i></a>
+                        <a href=""><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
