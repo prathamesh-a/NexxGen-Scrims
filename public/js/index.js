@@ -29,7 +29,6 @@ function feedBackSend(){
         console.log("Document written with ID: ", docRef.id);
         document.getElementById("feedback_user_email").value = " ";
         document.getElementById("feedback_user_text").value = "";
-        window.alert("Your response submitted.")
     })
     .catch((error) => {
         console.error("Error adding document: ", error);
