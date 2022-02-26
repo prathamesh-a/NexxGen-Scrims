@@ -83,7 +83,7 @@
 }
 .contact-form .send-btn{
     float: right;
-    background: #DEB887;
+    background: #354141;
     color: #fff;
     border: none;
     width: 120px;
@@ -96,7 +96,7 @@
 
 }
 .contact-form .send-btn:hover{
-    background: #D2691E;
+    background: #61fdfd;
 }
 
 @media screen and (max-width: 950px){
@@ -204,24 +204,25 @@
                     <div><i class="fas fa-map-marker-alt"></i>VIT Bhopal</div>
                     <div><i class="fas fa-envelope"></i>contact@email.com</div>
                     <div><i class="fas fa-phone"></i>+00 0000 000 000</div>
-                    <div><i class="fas fa-clock"></i>Mon-Fri 9:00 Am to 6:00 Pm</div>
+                    <div><i class="fas fa-clock"></i>Mon-Fri 9:00 am to 6:00 pm</div>
                 </div>
         
                 <div class="contact-form">
                     <h2>Contact Us</h2>
                     <form class="contact" action="" method="post">
-                        <input type="text" name="name" class="text-box" placeholder=" username" required>
-                        <input type="email" name="email" class="text-box" placeholder="Email Address" required>
-                        <textarea name="message" rows="5" placeholder="message" required></textarea>
-                        <input type="submit" name="submit" class="send-btn" value="Send">
+                        <input type="email" name="email" class="text-box" placeholder="Email" required>
+                        <textarea name="message" rows="5" placeholder="Message" required></textarea>
+                        <input type="submit" name="submit" class="send-btn" value="Send" onclick="feedBackSend()">
                     </form>
                 </div>
             </div>
         </div>
     </section>
-
-    
-
-    <!--contact section: end-->
+    <script src="https://kit.fontawesome.com/1613a55cf6.js" crossorigin="anonymous"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-auth.js"></script>
+    <script src="js/firebase.js"></script>
+    <script src="js/index.js"></script>
 </body>
 </html>
