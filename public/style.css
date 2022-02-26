@@ -3,8 +3,13 @@
     src: url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,300&display=swap');
   }
 
+@font-face {
+    font-family: head;
+    src: url(fonts/main.ttf);
+}
+
 body {
-    font-family: mainFont;
+    font-family: mainFont, serif;
     margin: 0;
     background-color: #161822;
     letter-spacing: 3px;
@@ -159,7 +164,7 @@ nav ul li a:hover {
     color: #ffee00;
 }
 #login-register-button {
-    font-family:revert;
+    font-family: mainFont, serif;
     background-color: hsl(207, 90%, 60%);
     color: white;
     border-radius: 20px;
@@ -689,7 +694,7 @@ footer ul li a {
     position: absolute;
     border: none;
     font-size: 14px;
-    font-family: inherit;
+    font-family: mainFont, serif;
     color: #fff;
     width: 9em;
     height: 3em;
