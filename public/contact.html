@@ -209,9 +209,9 @@
         
                 <div class="contact-form">
                     <h2>Contact Us</h2>
-                    <form class="contact" action="" method="post">
-                        <input type="email" name="email" class="text-box" placeholder="Email" required>
-                        <textarea name="message" rows="5" placeholder="Message" required></textarea>
+                    <form class="contact" action="" method="post" id="feedback_form">
+                        <input type="email" name="email" class="text-box" placeholder="Email" required id="feedback_user_email">
+                        <textarea name="message" rows="5" placeholder="Message" required id="feedback_user_text"></textarea>
                         <input type="submit" name="submit" class="send-btn" value="Send" onclick="feedBackSend()">
                     </form>
                 </div>
@@ -222,6 +222,7 @@
     <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-analytics.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
     <script src="js/firebase.js"></script>
     <script src="js/index.js"></script>
 </body>
