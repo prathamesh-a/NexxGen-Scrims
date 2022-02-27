@@ -3,13 +3,8 @@
     src: url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,300&display=swap');
   }
 
-@font-face {
-    font-family: head;
-    src: url(fonts/main.ttf);
-}
-
 body {
-    font-family: mainFont, serif;
+    font-family: mainFont;
     margin: 0;
     background-color: #161822;
     letter-spacing: 3px;
@@ -147,6 +142,8 @@ nav ul {
     list-style-type: none;
     padding: 0;
     margin: 10px 0 0;
+    float: right;
+    margin-right: 30px;
 }
 
 nav ul li {
@@ -157,14 +154,52 @@ nav ul li {
 
 nav ul li a {
     color: #eee;
+    display: inline-block;
+    padding: 0 15px;
+    font-size: 20px;
     font-weight: 600;
+    transition: 1s;
 }
 
 nav ul li a:hover {
     color: #ffee00;
 }
+nav ul ul{
+    position: absolute;
+    top: 85px;
+    border-top: 3px solid #23dbdb;
+    opacity: 0;
+    visibility: hidden;
+}
+nav ul li:hover > ul {
+    top: 70px;
+    opacity: 1;
+    visibility: visible;
+    transition: 1s linear;
+}
+nav ul ul li{
+    width: 150px;
+    display: list-item;
+    position: relative;
+    border: 1px solid #042331;
+    border-top: none;
+}
+nav ul ul li a{
+    line-height: 50px;
+}
+nav ul ul ul{
+    border-top: none;
+}
+nav ul ul ul li{
+    position: relative;
+    top: -70px;
+    left: 150px;
+}
+nav ul ul li a i{
+    margin-left: 45px;
+}
 #login-register-button {
-    font-family: mainFont, serif;
+    font-family:revert;
     background-color: hsl(207, 90%, 60%);
     color: white;
     border-radius: 20px;
@@ -202,9 +237,6 @@ nav ul li a:hover {
 #main_front-image {
     background: url('https://wallpapersmug.com/download/1600x1200/5051af/pubg-playerunknowns-battlegrounds.jpg') top center no-repeat;
     height: 820px;
-}
-#active{
-    color: yellow;
 }
 
 .main_front-marketing-text {
@@ -694,7 +726,7 @@ footer ul li a {
     position: absolute;
     border: none;
     font-size: 14px;
-    font-family: mainFont, serif;
+    font-family: inherit;
     color: #fff;
     width: 9em;
     height: 3em;
