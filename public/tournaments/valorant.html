@@ -29,6 +29,33 @@
         text-align: center;
         border-bottom: 1px solid #b1b1b1;
     }
+    .navbar{
+        width: 100%;
+        height: 10vh;
+        background: #000000;
+        margin: auto;
+        display: flex;
+        align-items: center;
+    }
+    
+    nav{
+        flex: 1;
+        text-align: center;
+    }
+    nav ul li{
+        list-style: none;
+        display: inline-block;
+        margin-left: 60px;
+    }
+    nav ul li a{
+        text-decoration: none;
+        color: #fff;
+        font-size: 18px;
+        padding: 5px 2px;
+    }
+    nav ul li a:hover{
+        color: #e7c82f;
+    }
     .tournament-container .event{
         box-shadow: 0 4px 16px -8px rgba(0, 0, 0, 0.4);
         display: flex;
@@ -115,46 +142,19 @@
 
 <body>
     <div class="tournament-container">
-        <h3 class="year">
-            <html>
-            <head>
-            <style>
-                @font-face {
-    font-family: mainFont;
-    src: url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,300&display=swap');
-}
-            .button {
-              background-color: #555555; /* Green */
-              border: none;
-              color: white;
-              padding: 15px 32px;
-              text-align: center;
-              text-decoration: none;
-              display: inline-block;
-              font-size: 16px;
-              margin: 4px 2px;
-              cursor: pointer;
-            }
+        <div class="navbar">
+            <img src="" class="logo">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="bgmi.html">BGMI</a></li>
+                    <li><a href="lol.html">LOL</a></li>
+                    <li><a href="valorant.html">Valorant</a></li>
+                    <li><a href="fifa.html">FIFA</a></li>
+                </ul>
+            </nav>
             
-            .button2 {background-color: #000000;} 
-            .button5 {background-color: #d0ff00;}  
-            .button3 {background-color: #000000; color: rgb(255, 244, 244);}  
-            .button4 {background-color: #000000;} 
-            </style>
-            </head>
-            <body>
-
-            <button class="button"><a href ="../index.html">Home</a></button>
-            <button class="button button2"><a href="bgmi.html">BGMI</a></button>
-            <button class="button button3"><a href="fifa.html">FIFA</a></button>
-            <button class="button button4"><a href="lol.html">LOL</a></button>
-            <button class="button button5"><a href="valorant.html">VALORANT</a></button>
-            
-            </body>
-            </html>
-            
-            
-            </h3>
+        </div>
 
         <div class="tournament">
             <div class="tournament-left">
