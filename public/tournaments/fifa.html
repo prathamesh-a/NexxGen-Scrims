@@ -5,18 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FIFA Tourney</title>
+    <link rel="stylesheet" href="../css/navbar.css">
 </head>
 <style type="text/css">
     *{
         margin: 0;
-        font-family: mainFont, serif;
         padding: 0;
     }
     .tournament-container{
         background-image:url('https://www.fifaultimateteam.it/en/wp-content/uploads/2021/08/cover-messi-psg-fifa-22.jpg');
-        font-family: mainFont, sans-serif;
         max-width: auto;
         margin: 0 auto;
+        font-family: "Roboto", sans-serif;
         text-align: center;
         background-position: center;
         background-size: 1800px;
@@ -80,32 +80,33 @@
     .navbar{
         width: 100%;
         height: 10vh;
-        background: #000000;
+        background: #272738;
         margin: auto;
         display: flex;
         align-items: center;
+        border-bottom: 1px solid #4efcf3;
     }
     
-    nav{
+    .nav2{
         flex: 1;
         text-align: center;
     }
-    nav ul li{
+    .nav2 ul li{
         list-style: none;
         display: inline-block;
         margin-left: 60px;
     }
     #live{
-        color: #e7c82f;
+        color: #2fe7d2;
     }
-    nav ul li a{
+    .nav2 ul li a{
         text-decoration: none;
         color: #fff;
         font-size: 18px;
         padding: 5px 2px;
     }
-    nav ul li a:hover{
-        color: #e7c82f;
+    .nav2 ul li a:hover{
+        color: #54fffa;
     }
     .tournament .tournament-right .tournament-timing{
         background: #00ffff;
@@ -145,12 +146,30 @@
 </style>
 
 <body>
+
+<header>
+    <div class="flex">
+        <div class="logo">
+            <a href="#"><img src="" /></a>
+        </div>
+        <nav>
+            <ul id="nav-menu-container">
+                <li><a href="../index.html">Home</a></li>
+                <li><a id="active">Tournaments</a></li>
+                <li><a href="../interviews.html">Interviews</a></li>
+                <li><a href="../awards/bgmi-awards.html">Awards</a></li>
+                <li><a href="../contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <a href="javascript:auth()" id="login-register-button">Login / Register</a>
+    </div>
+</header>
+
     <div class="tournament-container">
        <div class="navbar">
             <img src="" class="logo">
-            <nav>
+            <nav class="nav2">
                 <ul>
-                    <li><a href="../index.html">Home</a></li>
                     <li><a href="bgmi.html">BGMI</a></li>
                     <li><a href="lol.html">LOL</a></li>
                     <li><a href="valorant.html">Valorant</a></li>
@@ -243,5 +262,6 @@
         <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
         <script src="../js/firebase.js"></script>
         <script src="../js/forms/tournament.js"></script>
+        <script src="../js/tour.js"></script>
 </body>
 </html>

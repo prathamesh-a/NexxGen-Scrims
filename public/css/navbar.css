@@ -64,6 +64,7 @@ nav ul li a:hover {
 #login-register-button {
     font-family: mainFont, serif;
     text-decoration: none;
+    letter-spacing: 3px;
     background-color: hsl(207, 90%, 60%);
     color: white;
     border-radius: 20px;
