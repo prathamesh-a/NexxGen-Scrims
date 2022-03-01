@@ -1,0 +1,77 @@
+@font-face {
+    font-family: mainFont;
+    src: url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,300&display=swap');
+}
+
+#active{
+    color: yellow;
+}
+
+.flex {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+    justify-content: space-between;
+    font-family: mainFont, serif;
+}
+
+header {
+    background-color: #131313;
+    padding: 20px 0;
+    position: relative;
+    border-bottom: 1px solid #4efcf3;
+}
+
+.hamburger-menu {
+    background-color: transparent;
+    padding: 3px 5px;
+    width: 30px;
+    cursor: pointer;
+    display: none;
+}
+
+.hamburger-menu .strip {
+    display: block;
+    height: 1px;
+    margin: 4px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 10px 0 0;
+}
+
+nav ul li {
+    display: inline-block;
+    font-size: 1em;
+    margin: 0 18px;
+}
+
+nav ul li a {
+    color: #eee;
+    font-weight: 600;
+    text-decoration: none;
+    letter-spacing: 3px;
+}
+
+nav ul li a:hover {
+    color: #ffee00;
+    text-decoration: none;
+}
+
+#login-register-button {
+    font-family: mainFont, serif;
+    text-decoration: none;
+    background-color: hsl(207, 90%, 60%);
+    color: white;
+    border-radius: 20px;
+    padding: 10px 15px;
+    font-size: 0.85em;
+    font-weight: 600;
+}
+
+#login-register-button:hover {
+    box-shadow: 1px 1px 25px 10px rgba(146, 148, 248, 0.4);
+}
