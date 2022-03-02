@@ -3,23 +3,31 @@
 <head>
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/navbar.css">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Read More</title>
 
     <style type="text/css">
-        body{
-            background: url('https://media.istockphoto.com/photos/abstract-background-picture-id1190580005?k=20&m=1190580005&s=612x612&w=0&h=FrxyzD3hz_ucHM0umRZLkdbYvCU43K09VM-zLm3PlvA=');
-            background-size: cover;
-        }
         *{
             margin: 0px;
             padding: 0px;
             box-sizing: border-box;
-            font-family: sans-serif;
+            font-family: mainFont, serif;
         }
+        body{
+            background: url('https://wallpapersfortech.com/wp-content/uploads/2021/07/Gaming-PC-Wallpaper-HD.png');
+            background-size: cover;
+        }
+
         .section{
             width: 100%;
+        }
+        #link{
+            color: white;
+        }
+        #names{
+            color: white;
         }
         .section .container{
             width: 80%;
@@ -59,8 +67,9 @@
             height: auto;
         }
         .content .article h3{
-            color: #a3a3a3;
-            font-size: 16px;
+            color: #cbc8c8;
+            font-size: 22px;
+            font-weight: normal;
         }
         .content .article p{
             margin-top: 20px;
@@ -83,8 +92,17 @@
             border-radius: 50%;
             line-height: 45px;
             text-align: center;
-            background-color: #4f9a9a;
+            /*background-color: #4f9a9a;*/
             margin: 0px 5px;
+        }
+        .fa-facebook-f{
+            background-color: #1f6cff;
+        }
+        .fa-instagram{
+            background-color: #ff7aea;
+        }
+        .fa-twitter{
+            background-color: #28a0ad;
         }
         .container .social i:hover{
             color: #fff;
@@ -104,16 +122,13 @@
                 display: block;
                 margin: auto;
             }
-            .image-setion{
-                float: none;
-                width: 100%;
-                margin-top: 50px;
-            }
+
             .image-section img{
                 width: 100%;
                 height: auto;
                 display: block;
-                margin: auto;
+                /*margin: auto;*/
+                margin-right: 0;
             }
             .container .title h1{
                 text-align: center;
@@ -126,32 +141,55 @@
                 line-height: 35px;
 
             }
+
+
         }
     </style>
 </head>
 <body>
+
+<header>
+    <div class="flex">
+        <div class="logo">
+            <a href="#"><img src="" /></a>
+        </div>
+        <nav>
+            <ul id="nav-menu-container">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="tournaments/bgmi.html">Tournaments</a></li>
+                <li><a href="interviews.html">Interviews</a></li>
+                <li><a href="awards/bgmi-awards.html">Awards</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <a href="javascript:auth()" id="login-register-button">Login / Register</a>
+    </div>
+</header>
+
 <div class="section">
     <div class="container">
         <div class="title">
             <h1> About Us</h1>
         </div>
+        <div class="image-section">
+            <img src="https://www.buff.game/wp-content/uploads/2022/02/Image-1536x990.png" alt="icon">
+        </div>
         <div class="content">
             <div class="article">
-                <h3><a href="(nexxgenscrims.net)" id="link">Nexx-Gen SCRIMS </a> is a website designed to help new and upcoming gamers in India. In recent times, gaming has seen an influx in terms of gamers choosing it as a career choice. Many such gamers have the required skill to excel, but no ideal base for showing their excellence. Our website is aimed at providing tournaments for such gamers, where entry is free of cost, unlike some other websites, where entry fees are charged. We aim to have clean and smooth hosting of various tournaments of various games. Currently, games for which tournaments can be participated in are: BGMI India Mobile, League of Legends, Valorant, and FIFA.
+                <h3><a id="link">Nexx-Gen SCRIMS </a> is a website designed to help new and upcoming gamers in India. In recent times, gaming has seen an influx in terms of gamers choosing it as a career choice. Many such gamers have the required skill to excel, but no ideal base for showing their excellence. Our website is aimed at providing tournaments for such gamers, where entry is free of cost, unlike some other websites, where entry fees are charged. We aim to have clean and smooth hosting of various tournaments of various games. Currently, games for which tournaments can be participated in are: BGMI India Mobile, League of Legends, Valorant, and FIFA.
                 </h3>
 
-                <p style="color: #fff;">Developed with love by:<br>Anmol Sharma<br>Ashray Chauhan<br>Prakhar Jain<br>Prathamesh Auti<br>Tathagata Roy<br>Vipul Kulkarni<br>Yash Bhagwani</p>
+                <p style="color: #ffd529;">Developed with love by:</p><p id="names">Anmol Sharma<br>Ashray Chauhan<br>Prakhar Jain<br>Prathamesh Auti<br>Tathagata Roy<br>Vipul Kulkarni<br>Yash Bhagwani</p>
 
-                <div class="image-section">
-                    <img src="">
 
-                </div>
-                <div class="social">
-                    <a href="https://www.facebook.com/nexxgenscrimsnet/"><i class="fab fa-facebook-f"></i></a>
-                    <a href="https://www.instagram.com/nexxgenscrims/"><i class="fab fa-instagram"></i></a>
-                    <a href=""><i class="fab fa-twitter"></i></a>
-                </div>
+
             </div>
+
+        </div>
+        <div class="social">
+            <a href=""><i class="fab fa-facebook-f"></i></a>
+            <a href=""><i class="fab fa-instagram"></i></a>
+            <a href=""><i class="fab fa-twitter"></i></a>
         </div>
     </div>
 </div>
