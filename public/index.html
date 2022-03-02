@@ -8,10 +8,11 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
     <link rel = "icon" href = "https://c.neh.tw/thumb/f/720/comdlpng6934947.jpg" type = "image/x-icon">
-
+    <link rel="stylesheet" href="css/loader.css">
 </head>
-<body>
-    <header>
+<body onload="loadingFun()">
+
+    <header id="header">
         <div class="flex">
             <div class="logo">
                 <a href="#"><img src="" /></a>
@@ -28,8 +29,8 @@
             <a href="javascript:auth()" id="login-register-button">Login / Register</a>
         </div>
     </header>
-
-    <main>
+    <div class="spinner" id="spinner"></div>
+    <main style="display:none;" id="main">
         <section id="main_front-image">
             <div class="main_front-marketing-text">
                 <div class="deconstructed">
@@ -319,7 +320,7 @@
         </section>
     </main>
 
-    <footer>
+    <footer style="display:none;" id="footer">
         <div class="flex">
             <small>Copyright &copy; 2021 All rights reserved | <a href="" target="_blank">NexxGen-Scrims</a>.</small>
             <ul>
@@ -347,11 +348,23 @@
     </footer>
 
     <script>
+        var myVar;
+
+        function loadingFun() {
+            myVar = setTimeout(showPage, 1000);
+        }
+
+        function showPage() {
+            document.getElementById("spinner").style.display = "none";
+            document.getElementById("footer").style.display = "block";
+            document.getElementById("main").style.display = "block";
+            //document.getElementById("header").style.display = "block";
+        }
+
         document.getElementById('nav-toggle').addEventListener('click', function () {
             let navMenu = document.getElementById('nav-menu-container');
             navMenu.style.display = navMenu.offsetParent === null ? 'block' : 'none';
         });
-
     </script>
     <script src="https://kit.fontawesome.com/1613a55cf6.js" crossorigin="anonymous"></script>
     <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-app.js"></script>

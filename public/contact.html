@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/loader.css">
 
     <style type="text/css">
         /*start: contact section styles */
@@ -150,7 +151,7 @@
 /*end: error message styles */
     </style>
 </head>
-<body>
+<body onload="loadingFun()">
     
 
     <!--alert message: start-->
@@ -196,7 +197,8 @@
             <a href="login.html" id="login-register-button">Login / Register</a>
         </div>
     </header>
-    <section id="main_front-image">
+    <div class="spinner" id="spinner"></div>
+    <section id="main_front-image" style="display: none">
         <div class="main_front-marketing-text">
             <div class="contact-section">
                 <div class="contact-info">
@@ -217,6 +219,7 @@
             </div>
         </div>
     </section>
+
     <script src="https://kit.fontawesome.com/1613a55cf6.js" crossorigin="anonymous"></script>
     <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-analytics.js"></script>
@@ -224,5 +227,17 @@
     <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
     <script src="js/firebase.js"></script>
     <script src="js/index.js"></script>
+    <script>
+        var myVar;
+
+        function loadingFun() {
+            myVar = setTimeout(showPage, 1000);
+        }
+
+        function showPage() {
+            document.getElementById("spinner").style.display = "none";
+            document.getElementById("main_front-image").style.display = "block";
+        }
+    </script>
 </body>
 </html>

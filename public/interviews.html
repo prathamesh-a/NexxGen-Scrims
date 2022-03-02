@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Interviews</title>
     <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/loader.css">
 </head>
 <style type="text/css">
 @font-face {
@@ -91,7 +92,8 @@ body{
   border-radius: 60%;
 }
 </style>
-<body>
+<body onload="loadingFun()">
+
 <header>
     <div class="flex">
         <div class="logo">
@@ -109,8 +111,8 @@ body{
         <a href="javascript:auth()" id="login-register-button">Login / Register</a>
     </div>
 </header>
+<div id="all" style="display: none">
     <div class="wrapper">
-<!--        <h1>Interviews</h1><br><br><br>-->
         <br><br><br><br><br>
         <div class="interviews">
           <div class="player_name">
@@ -146,6 +148,8 @@ body{
           </div>
         </div>
       </div>
+</div>
+<div class="spinner" id="spinner"></div>
 <script src="https://kit.fontawesome.com/1613a55cf6.js" crossorigin="anonymous"></script>
 <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-app.js"></script>
 <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-analytics.js"></script>
@@ -153,5 +157,17 @@ body{
 <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
 <script src="js/firebase.js"></script>
 <script src="js/index.js"></script>
+<script>
+    var myVar;
+
+    function loadingFun() {
+        myVar = setTimeout(showPage, 1000);
+    }
+
+    function showPage() {
+        document.getElementById("spinner").style.display = "none";
+        document.getElementById("all").style.display = "block";
+    }
+</script>
 </body>
 </html>
