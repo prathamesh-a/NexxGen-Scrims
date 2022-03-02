@@ -184,7 +184,7 @@ nav ul li a:hover {
 }
 
 #read_more:hover {
-    box-shadow: 1px 1px 25px 10px rgba(146, 148, 248, 0.4);
+    box-shadow: 1px 1px 25px 10px #00d9ff;
 }
 
 #read_more2{
