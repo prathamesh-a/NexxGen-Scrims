@@ -176,7 +176,7 @@ nav ul li a:hover {
 
 #read_more  {
     font-family: mainFont, serif;
-    background-color: linear-gradient(rgb(0, 217, 255), rgb(255, 0, 255));
+    background-color: linear-gradient(135deg, rgb(0, 217, 255), rgb(255, 0, 255));
     border-radius: 20px;
     padding: 10px 15px;
     font-size: 1.35em;
