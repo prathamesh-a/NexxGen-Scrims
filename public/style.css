@@ -3,8 +3,6 @@
     src: url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,300&display=swap');
 }
 
-
-
 body {
     font-family: mainFont;
     margin: 0;
@@ -176,15 +174,17 @@ nav ul li a:hover {
 
 #read_more  {
     font-family: mainFont, serif;
-    background-color: hsl(207, 90%, 60%);
+    background-color: #00d9ff;
+    background-image: linear-gradient(135deg, #00d9ff, #ff00ff);
+    transition: 0.4s;
     border-radius: 20px;
     padding: 10px 15px;
-    font-size: 1.35em;
+    font-size: 1em;
     font-weight: 300;
 }
 
 #read_more:hover {
-    box-shadow: 1px 1px 25px 10px rgba(146, 148, 248, 0.4);
+    box-shadow: 1px 1px 25px 10px #00d9ff;
 }
 
 #read_more2{
