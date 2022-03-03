@@ -4,7 +4,6 @@ firebase.auth().onAuthStateChanged((user)=>{
     }
 })
 
-
 function login(){
     const userEmail = document.getElementById("login_user_email").value;
     const pass = document.getElementById("login_user_password").value;

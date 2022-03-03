@@ -6,9 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us</title>
-    <link rel="stylesheet" href="style.css">
+<!--    <link rel="stylesheet" href="style.css">-->
     <link rel="stylesheet" href="css/loader.css">
-
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/button.css">
     <style type="text/css">
         /*start: contact section styles */
         *{
@@ -16,7 +17,6 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 
 .contact-section {
     width: 100%;
@@ -26,11 +26,13 @@
     
 }
 .contact-info {
-    color: #fff;
+    color: #fff3f3;
     max-width: 500px;
     line-height: 65px;
     padding-left: 50px;
     font-size: 18px;
+    margin-top: 100pt;
+    font-weight: bold;
 }
 .contact-info i{
     margin-right: 20px;
@@ -39,6 +41,7 @@
 .contact-form{
     max-width: 700px;
     margin-right: 50px;
+    margin-top: 135pt;
 }
 .contact-info, .contact-form{
     flex: 1;
@@ -146,6 +149,13 @@
     border-left: 8px solid #D2691E;
     border-radius: 8px;
 }
+#main_front-image {
+    height: 100vh;
+    width: 100vw;
+    background: url('https://img.freepik.com/free-photo/cool-geometric-triangular-figure-neon-laser-light-great-backgrounds_181624-11068.jpg?size=626&ext=jpg&ga=GA1.1.1518199698.1643414400') no-repeat center;
+    background-size: cover;
+    filter: blur(10);
+}
 
 
 /*end: error message styles */
@@ -209,7 +219,7 @@
                 </div>
         
                 <div class="contact-form">
-                    <h2>Contact Us</h2>
+<!--                    <h2>Contact Us</h2>-->
                     <form class="contact" action="" method="post" id="feedback_form">
                         <input type="email" name="email" class="text-box" placeholder="Email" required id="feedback_user_email">
                         <textarea name="message" rows="5" placeholder="Message" required id="feedback_user_text"></textarea>
